@@ -1,0 +1,13 @@
+Dockerfile
+.git
+.gitignore
+.github
+LICENSE
+README.md
+sonar-project.properties
+coverage.xml
+.coverage
+tox.ini
+.tox
+.pytest_cache
+__pycache__
