@@ -33,7 +33,7 @@ jobs:
 
       - name: Docker Login
         run: |
-          echo '${{ secrets.GOOGLE_CREDENTIALS }}' > key.json
+          echo -E '${{ secrets.GOOGLE_CREDENTIALS }}' > key.json
           cat key.json | docker login -u _json_key --password-stdin '${{ vars.GOOGLE_ARTIFACT }}'
 
       - name: Build & Push Image
